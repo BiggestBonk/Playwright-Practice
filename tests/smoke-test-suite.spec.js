@@ -4,12 +4,6 @@ test.describe.parallel('Smoke Tests', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto('/')
   })
-  test('Playwright page Test', async ({ page }) => {
-    await page.goto('https://playwright.dev')
-    const title = page.locator('.navbar__inner .navbar__title')
-    await expect(title).toHaveText('Playwright')
-  })
-
   test('Checkbox Test ', async ({ page, browserName }) => {
     await page.goto('/checkboxes')
     const title = page.getByRole('heading', { name: 'Checkboxes' })

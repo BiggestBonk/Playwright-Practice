@@ -16,5 +16,8 @@ test.describe('Locator Tests', () => {
     await expect(page.getByText('Current Address :')).toContainText(
       '123 Test Street'
     )
+    await expect(page.getByText('Permananet Address :')).toContainText(
+      '456 Test Road'
+    )
   })
 })
