@@ -9,7 +9,6 @@ test.describe('Locator Tests', () => {
       .fill('Test@email.com')
     await page.locator('#currentAddress').fill('123 Test Street')
     await page.locator('#permanentAddress').fill('456 Test Road')
-    // page.locator('#submit').click
     await page.getByRole('button', { name: 'Submit' }).click()
     await expect(page.locator('#name')).toContainText('Test Username')
     await expect(page.getByText('Email:')).toContainText('Test@email.com')

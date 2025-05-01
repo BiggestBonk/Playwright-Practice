@@ -7,6 +7,7 @@ const config = {
     viewport: { width: 1200, height: 720 },
     screenshot: 'only-on-failure',
     video: 'off',
+    trace: 'on',
   },
   projects: [
     {
