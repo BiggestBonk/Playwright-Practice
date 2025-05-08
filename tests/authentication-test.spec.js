@@ -10,7 +10,7 @@ test.describe('Authentication', () => {
     await page.goto('https://parabank.parasoft.com')
   })
   //Test to save auth details (ran once)
-  test.skip('Saving Authentication', async ({ page }) => {
+  test.skip('Test Login and Save Authentication', async ({ page }) => {
     await page.locator('input[name="username"]').click()
     await page.locator('input[name="username"]').fill('Secure')
     await page.locator('input[name="password"]').click()
@@ -19,7 +19,7 @@ test.describe('Authentication', () => {
     //Saving auth details to json file on initial run
     await page.context().storageState({ path: 'automationUser.json' })
   })
-  //Tests for functionality that's only available while logged in
+  //Tests for functionality thats only available while logged in
   test('Use Saved Authentication and Navigate To Transfer Funds', async ({
     page,
   }) => {
