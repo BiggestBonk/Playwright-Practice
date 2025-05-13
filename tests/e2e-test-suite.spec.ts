@@ -10,7 +10,7 @@ test.describe('Authentication', () => {
     await page.goto('https://parabank.parasoft.com')
   })
   //Test to save auth details (ran once)
-  test.skip('Test Login and Save Authentication', async ({ page }) => {
+  test('Test Login and Save Authentication', async ({ page }) => {
     await page.locator('input[name="username"]').click()
     await page.locator('input[name="username"]').fill('Secure')
     await page.locator('input[name="password"]').click()

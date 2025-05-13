@@ -24,9 +24,7 @@ test.describe.parallel('Smoke Tests', () => {
     await expect(checkbox2).not.toBeChecked()
   })
 
-  test.only('User Can Drag and Drop Box At Other Location', async ({
-    page,
-  }) => {
+  test('User Can Drag and Drop Box At Other Location', async ({ page }) => {
     await page.goto('/drag_and_drop')
     const title = page.getByRole('heading', { name: 'Drag And Drop' })
     await expect(title).toBeVisible()
