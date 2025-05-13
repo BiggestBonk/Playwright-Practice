@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test'
 
 test.describe.parallel('Smoke Tests', () => {
   test.beforeEach(async ({ page }) => {
-    await page.goto('https://the-internet.herokuapp.com/')
+    await page.goto('/')
   })
 
   test('User Can Add and Delete Elements', async ({ page, browserName }) => {
