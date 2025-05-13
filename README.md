@@ -1,4 +1,6 @@
-This is a testing project I created from scratch as a part of the Udemy course I'm currently working through to improve my knowledge and skills with test automation.
+# Playwright Practice #
+
+This is a testing project I created from scratch as a part of the Udemy course I'm currently working through to improve my overall knowledge and skills with test automation.
 
 ### It includes: ###
 * selector-test-suite.spec.ts: Contains tests that are written to verify https://demoqa.com/text-box UI functionality, ensuring the output matches the input values. 
