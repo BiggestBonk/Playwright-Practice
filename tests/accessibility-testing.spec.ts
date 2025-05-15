@@ -11,6 +11,6 @@ test.describe('landing page', () => {
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
       .analyze()
 
-    expect(wcagScanResults.violations).toEqual([40])
+    expect(wcagScanResults.violations).toEqual([0])
   })
 })
